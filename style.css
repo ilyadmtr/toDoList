@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+}
+body{
+  background: goldenrod;
+  padding-top: 30px;
+}
+h1{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.flex-wrapper{
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+@media(max-width:500px){
+  .flex-wrapper{
+    width: 90%;
+  }
+  .todos-wrapper{
+    width: 100%;
+  }
+  .todo-item{
+    width: 90%;
+  }
+}
+.add-todo-wrapper{
+  display: flex;
+  align-items: center;
+}
+#add-task-btn{
+  background:sandybrown;
+  color: #fff;
+  border: 0;
+  border-radius:5px;
+  padding: 3px;
+  margin-left: 10px;
+}
+h2{
+  margin: 30px 0;
+}
+.todos-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-item {
+  display: flex;
+  padding: 20px 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border:2px solid goldenrod;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  width: 70%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+#btn-delete{
+  background:sandybrown;
+  color: #fff;
+  font-size: 15px;
+  border: 0;
+  border-radius:5px;
+  padding: 3px;
+  margin-left: 10px;
+}
+#btn-complete{
+  width: 25px;
+  height: 25px;
+}
+.description{
+  padding-left: 30px;
+}
+@media(max-width:1200px){
+  .todos-wrapper{
+    width: 100%;
+  }
+  .todo-item{
+    width: 90%;
+  }
+  .buttons{
+    width: 40%;
+  }
+}
+
+.checked{
+  background: goldenrod;
+
+}
+.checked .description{
+  text-decoration:line-through;
+}
+@keyframes opacity{
+  from{
+    opacity:1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.todo-item.delition{
+animation: opacity 1s ease-in-out;
+}
