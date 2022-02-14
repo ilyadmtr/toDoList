@@ -94,20 +94,20 @@ h1{
 }
 @media (max-width:350px) {
   #add-task-btn{
-    font-size: 15px;
+    font-size: 11px;
   }
   #description-task{
-    font-size: 17px;
+    font-size: 13px;
   }
 }
-@media (max-width:300px) {
+/* @media (max-width:300px) {
   #add-task-btn{
     font-size: 13px;
   }
   #description-task{
     font-size: 15px;
   }
-}
+} */
 h2{
   margin: 30px 0;
 }
