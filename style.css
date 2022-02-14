@@ -52,7 +52,7 @@ h1{
 #description-task{
   font-size: 30px;
 }
-/* @media (max-width:900px) {
+@media (max-width:900px) {
   #add-task-btn{
     font-size: 20px;
   }
@@ -99,15 +99,15 @@ h1{
   #description-task{
     font-size: 13px;
   }
-} */
-/* @media (max-width:300px) {
+}
+@media (max-width:300px) {
   #add-task-btn{
     font-size: 13px;
   }
   #description-task{
     font-size: 15px;
   }
-} */
+}
 h2{
   margin: 30px 0;
 }
